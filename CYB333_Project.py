@@ -1,12 +1,15 @@
+#Ifechukwude Chukwurah
+#10/23/2021
+#Title: Option2 - Pcap
 
-#python wasn't installed properly so I had to import in this way.
+
+#Modules could not be loaded properly and had to run with python instead of python3
 from scapy.all import *
 from scapy.all import rdpcap
 from scapy.all import hexdump
 
 
 fname = input("Enter a pcap file: ")
-#with open(secondscan.pcap, 'rb') as fname:
 fpacket = rdpcap(fname)
 pkt = fpacket
 pkt_nmbr = len(pkt)
